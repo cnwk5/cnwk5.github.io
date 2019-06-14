@@ -5,6 +5,7 @@
             Om's Gaming/Watching Website 
         </title>
         <style>
+                
             
             .content{
          
@@ -37,6 +38,22 @@
             a:hover {
                 color: aqua;
             }
+            button{
+                width: 500px;
+                height: 500px;
+                background-color:darkblue;   
+                font-size: 72px;
+            }
+            button:hover{
+                background-color: darkgoldenrod
+                
+                
+            }
+            button:active{
+                background-color: darkred
+                    outline:20px solid
+                    orange;
+            }
         </style>
     </head>
     <body>
@@ -60,7 +77,9 @@
     <iframe width="200" height="200" src="https://www.youtube.com/embed/3spNcP9hFQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/25aXXJTVcCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/iEM7svQ7b4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/wLV7xbGG-0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/2J-TR2cx5mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/W8E4B_CoB04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="200" height="200" src="https://www.youtube.com/embed/c3NqXSEFhEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="container">
-            <iframe src="https://scratch.mit.edu/projects/315491865/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><iframe src="https://scratch.mit.edu/projects/51240832/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><iframe src="https://scratch.mit.edu/projects/195188/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://scratch.mit.edu/projects/315491865/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><iframe src="https://scratch.mit.edu/projects/51240832/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><iframe src="https://scratch.mit.edu/projects/195188/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> 
+                s;                      
+    }
         </div>
         <ul>
             <a href="https://www.youtube.com">Link To YouTube</a>
@@ -71,5 +90,16 @@
             <a href="https://www.friv.com">Link To Friv</a>
                            
         </ul>
+        <h1>Om's Useless Clicker</h1>
+        <button onclick="score()">Point!</button>
+        <h3 id="score">0</h3>
     </body>
+    <script>
+        var points =0;
+    function score(){
+        points++;
+        
+        document.getElementById("score").innerHTML = points;                      
+    }
+    </script>
 </html>
